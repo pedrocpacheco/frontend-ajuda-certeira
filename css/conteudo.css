@@ -1,20 +1,131 @@
-.secao-conteudo{
+
+main{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+}
+.conteudo{
+    margin-top: 40px;
+    display: flex;
     justify-content: space-around;
-    margin-top: 35px;;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 15px;
 }
 
 .info-conteudo{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-conteudo{
+    font-size: 50px;
+}
+
+.legenda-conteudo{
+    font-size: 20px;
+}
+
+
+.botao-acessar{
+    border: 3px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #064860;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.info-conteudo p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    max-width: 850px;
+}
+
+.logo{
+    width: 450px;
+}
+
+#subtitulo-parceiros{
+    max-width: 65vw;
+}
+
+#titulo-inicio{
+    margin-top: 20px;
+    font-size: 55px;
+}
+
+@media screen and (max-width: 1132px){
+    .conteudo{
+        flex-direction: column;
+    }
+
+    .info-conteudo{
+        text-align: center;
+    }
+
+    .legenda-conteudo{
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .botao-acessar{
+        width: 80vw;
+    }
+
+    .info-conteudo{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        margin-top: 30px;
+        width: 500px;
+    }
+}
+
+.parceiros{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.parceiro{
+    border: #16ADE7 solid 3px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: top;
+    padding-top: 5px;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.img-conteudo{
-    width: 30vw;
+.img-parceiro{
+    width: 200px;
 }
 
-.img-conteudo img{
-    width: 500px;
+.parceiro h2{
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.parceiro p{
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+.texto-parceiro{
+    background-color: #C5EBF9;
+    padding: 15px;
+    border-radius: 25px;
 }
