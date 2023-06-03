@@ -45,21 +45,22 @@
     margin-bottom: 5px;
 }
 
-#titulo-ongs{
+#titulo-menor{
     font-size: 50px;
     margin-top: 10px;
     margin-left: 10px;
 }
 
-.subtitulo-ongs{
+.subtitulo-menor{
     font-size: 20px;
 }
 
 .legenda{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     margin-top: 5px;
     margin-bottom: -10px;
+    color: gray;
 }
 
 form{
@@ -155,6 +156,11 @@ form{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.campos-linha{
+    display: flex;
+    gap: 20px;
 }
 
 .card-evento{
@@ -258,7 +264,7 @@ form{
 }
 
 .secao-exemplos{
-    margin-top: 30px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -268,9 +274,73 @@ form{
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: top;
+    align-items: center;
     gap: 10px;
 }
 
+.exemplo p{
+    max-width: 30vw;
+}
+
 .print-pergunta{
-    
+    border-radius: 10px;
+    margin-top: 3px;
+    width: 30vw;
+}
+
+.linha-titulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgs-titulo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#node-red{
+    margin-left: 8px;
+    height: 50px;
+}
+
+.linha-titulo img{
+    width: 60px;
+}
+
+
+@media screen and (max-width: 1132px){
+
+    .campos-linha{
+        flex-direction: column;
+    }
+
+    .linha-titulo{
+        flex-direction: column;
+    }
+
+    .imgs-titulo{
+        margin-bottom: 25px;
+    }
+
+    .secao-exemplos{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .exemplo{
+        margin-top: 30px;
+    }
+
+    .exemplo p{
+        max-width: 500px;
+    }
+
+    .print-pergunta{
+        width: 500px;
+    }
 }

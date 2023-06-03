@@ -49,29 +49,32 @@
     <main>
     <div class="formulario">      
         <div class="titulo">
-            <h1 id="titulo-ongs">Adicione Eventos</h1>
-            <p class="subtitulo-ongs">Adicione ONGs na Aplicação, e descreva as suas atividades, e as informações do seu criador.</p>
+            <h1 id="titulo-menor">Adicione Eventos</h1>
+            <p class="subtitulo-menor">Adicione ONGs na Aplicação, e descreva as suas atividades, e as informações do seu criador.</p>
             <p class="legenda">(Prototipo, em versões posteriores, esse processo seria feito pelas ONGs cadastradas. A ONG que criasse o evento seria automaticamente o seu criador.)</p>
         </div>
         <form id="form-api">
             <h1>Digite as Informações:</h1>
             <div class="campos">
-                <div class="informacao">
-                    <label for="name">Nome:</label>
-                    <input placeholder="nome" name="name" id="name" type="text">
+                <div class="campos-linha">
+                    <div class="informacao">
+                        <label for="name">Nome:</label>
+                        <input placeholder="nome" name="name" id="name" type="text">
+                    </div>
+                    <div class="informacao">
+                        <label for="endereco">Endereço:</label>
+                        <input placeholder="endereco" name="adress" id="endereco" type="text">
+                    </div>
+                    <div class="informacao">
+                        <label for="imageUrl">URL da Img do Evento:</label>
+                        <input placeholder="imagem evento" name="imageUrl" id="imageUrl" type="text">
+                    </div>
+                    <div class="informacao">
+                        <label for="descricao">Descrição:</label>
+                        <input placeholder="descricao" name="description" id="descricao" type="text">
+                    </div>
                 </div>
-                <div class="informacao">
-                    <label for="endereco">Endereço:</label>
-                    <input placeholder="endereco" name="adress" id="endereco" type="text">
-                </div>
-                <div class="informacao">
-                    <label for="imageUrl">URL da Img do Evento:</label>
-                    <input placeholder="imagem evento" name="imageUrl" id="imageUrl" type="text">
-                </div>
-                <div class="informacao">
-                    <label for="descricao">Descrição:</label>
-                    <input placeholder="descricao" name="description" id="descricao" type="text">
-                </div>
+                <div class="campos-linha">
                 <div class="informacao">
                     <label for="dia">Dia do Evento:</label>
                     <input placeholder="00/00" name="dia" id="dia" type="text">
@@ -85,6 +88,7 @@
                     <input placeholder="imagem criador evento" name="creatorImageUrl" id="creatorImageUrl" type="text">
                 </div>
                 <button class="enviar" type="submit">Enviar</button>
+            </div>
             </div>
         </form>
         <button id="atualizar" onclick="getEventos()">Atualizar</button>
