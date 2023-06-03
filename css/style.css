@@ -298,12 +298,7 @@ form{
 .imgs-titulo{
     display: flex;
     align-items: center;
-    gap: 5px;
-}
-
-#node-red{
-    margin-left: 8px;
-    height: 50px;
+    gap: 10px;
 }
 
 .linha-titulo img{
