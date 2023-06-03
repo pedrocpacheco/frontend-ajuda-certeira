@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+}
+
+.formulario{
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 80vw;
+}
+
+.titulo-ias{
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 25px;
+}
+
+
+.titulo h1{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#titulo-ongs{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.subtitulo-ongs{
+    font-size: 20px;
+}
+
+.legenda{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+form{
+    display: flex;
+    margin: 10px;
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+#form-api{
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-api label{
+    font-size: 20px;
+}
+
+#form-api input{
+    width: 200px;
+    height: 20px;
+}
+
+#atualizar{
+    border: none;
+    border: 3px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #dca903;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    width: 25vw;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.enviar{
+    border: none;
+    border: 3px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #6ECDF0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.informacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-itens{
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#itens{
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.card{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #16ADE7;
+}
+
+.campos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-evento{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #16ADE7;
+}
+
+.evento-organizador{
+    display: flex;
+    border: 20px;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.info-organizador{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.nome-dia{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.dia{
+    margin-top: 1px;
+    color: white;
+    font-weight: bold;
+}
+
+.img-organizador{
+    width: 100px;
+    border-radius: 30%;
+}
+
+.nome-organizador{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.image-container img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-container-evento img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nome-id{
+    display: flex;
+    gap: 10px;
+}
+
+.info{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-evento{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao{
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.descricao-evento{
+    max-width: 450px;
+}
+
+.email{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.adress{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.secao-exemplos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.exemplo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.print-pergunta{
+    
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icone.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="doadores.html"><img class="img-logo" src="./img/plataforma.png" alt="Logo Ajuda Certeira | Usuário"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="doadores.html" class="nav-link">Doadores</a></li>
+                    <li class="nav-item"><a href="ongs.html" class="nav-link">Ongs</a></li>
+                    <li class="nav-item"><a href="eventos.html" class="nav-link" id="atual">Eventos</a></li>
+                    <li class="nav-item"><a href="culvito.html" class="nav-link">Mapa Inteligente</a></li>
+                    <li class="nav-item"><a href="./ias/ajudante.html" class="nav-link">Ajudante Pessoal</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button class="white-btn"><a href="./home/index.html">Sair</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="doadores.html" class="nav-link">Doadores</a></li>
+                    <li class="nav-item"><a href="ongs.html" class="nav-link">Ongs</a></li>
+                    <li class="nav-item"><a href="eventos.html" class="nav-link" id="atual-mobile-menu">Eventos</a></li>
+                    <li class="nav-item"><a href="culvito.html" class="nav-link">Mapa Inteligente</a></li>
+                    <li class="nav-item"><a href="./ias/ajudante.html" class="nav-link">Ajudante Pessoal</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="./home/index.html">Sair</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="formulario">      
+        <div class="titulo">
+            <h1 id="titulo-ongs">Adicione Eventos</h1>
+            <p class="subtitulo-ongs">Adicione ONGs na Aplicação, e descreva as suas atividades, e as informações do seu criador.</p>
+            <p class="legenda">(Prototipo, em versões posteriores, esse processo seria feito pelas ONGs cadastradas. A ONG que criasse o evento seria automaticamente o seu criador.)</p>
+        </div>
+        <form id="form-api">
+            <h1>Digite as Informações:</h1>
+            <div class="campos">
+                <div class="informacao">
+                    <label for="name">Nome:</label>
+                    <input placeholder="nome" name="name" id="name" type="text">
+                </div>
+                <div class="informacao">
+                    <label for="endereco">Endereço:</label>
+                    <input placeholder="endereco" name="adress" id="endereco" type="text">
+                </div>
+                <div class="informacao">
+                    <label for="imageUrl">URL da Img do Evento:</label>
+                    <input placeholder="imagem evento" name="imageUrl" id="imageUrl" type="text">
+                </div>
+                <div class="informacao">
+                    <label for="descricao">Descrição:</label>
+                    <input placeholder="descricao" name="description" id="descricao" type="text">
+                </div>
+                <div class="informacao">
+                    <label for="dia">Dia do Evento:</label>
+                    <input placeholder="00/00" name="dia" id="dia" type="text">
+                </div>
+                <div class="informacao">
+                    <label for="creatorName">Nome do Criador:</label>
+                    <input placeholder="nome criador evento" name="creatorName" id="creatorName" type="text">
+                </div>
+                <div class="informacao">
+                    <label for="creatorImgUrl">URL da Img do Criador:</label>
+                    <input placeholder="imagem criador evento" name="creatorImageUrl" id="creatorImageUrl" type="text">
+                </div>
+                <button class="enviar" type="submit">Enviar</button>
+            </div>
+        </form>
+        <button id="atualizar" onclick="getEventos()">Atualizar</button>
+    </div>
+    <div class="secao-itens">
+        <div id="itens">
+            
+        </div>
+    </div>
+    <br>
+    </main>
+    <script src="scripts/eventos.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
