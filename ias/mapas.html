@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icone.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Ajuante | Ajuda Certeira</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="../doadores.html"><img class="img-logo" src="../img/ias-section.png" alt="Logo Ajuda Certeira | Usuário"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../doadores.html" class="nav-link">Doadores</a></li>
+                    <li class="nav-item"><a href="../ongs.html" class="nav-link">Ongs</a></li>
+                    <li class="nav-item"><a href="../eventos.html" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="./ajudante.html" class="nav-link" id="atual">Mapa Inteligente</a></li>
+                    <li class="nav-item"><a href="../ias/ajudante.html" class="nav-link">Ajudante Pessoal</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button class="white-btn"><a href="../home/index.html">Sair</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="doadores.html" class="nav-link">Doadores</a></li>
+                <li class="nav-item"><a href="ongs.html" class="nav-link">Ongs</a></li>
+                <li class="nav-item"><a href="eventos.html" class="nav-link">Eventos</a></li>
+                <li class="nav-item"><a href="./ajudante.html" class="nav-link" id="atual">Mapa Inteligente</a></li>
+                <li class="nav-item"><a href="./ias/ajudante.html" class="nav-link">Ajudante Pessoal</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="../home/index.html">Sair</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="titulo-ias">
+        <div class="titulo">
+            <div class="linha-titulo">
+                <h1 id="titulo-menor">Ajudante Pessoal</h1>
+                <div class="imgs-titulo">
+                    <img src="../img/openai.png" alt="Logo OpenAI">
+                    <img src="../img/telegram.png" alt="Logo Telegram">
+                    <img src="../img/nodered.png" alt="Logo Node-Red" id="node-red">
+                </div>
+            </div>
+            <p class="subtitulo">Usuarios da nossa aplicação tem acesso à um Ajudante Pessoas que pode responder todo tipo de pergunta!</p>
+            <p class="legenda">(Prototipo, atualmente este Ajudante com API da OpenAI só funciona com um fluxo Node-Red operando. Posteriomente, um deploy na nuvem seria preferencial.)</p>
+        </div>
+    </div>
+    <div class="secao-exemplos">
+        <div class="exemplo">
+            <h2>Dúvidas quanto a doações</h2>
+            <p>Se você não tem certeza que o produto que você tem é abil para doações, pergunta para o ajudante!</p>
+            <img src="../img/p1.png" alt="Exemplo 1 de Perguntas " class="print-pergunta">
+        </div>
+        <div class="exemplo">
+            <h2>Maneiras de Auxiliar ONGs</h2>
+            <p>Esta disposto a ajudar ONGs mas não sabe de quais maneiras? Não tem problemas, pergunte para o seu ajudante!</p>
+            <img src="../img/p2.png" alt="Exemplo 2 de Perguntas " class="print-pergunta">
+        </div>
+        <div class="exemplo">
+            <h2>Perguntas Gerais</h2>
+            <p>O seu Ajudante Pessoal pode responder de tudo! Inclusive, te ajudar na hora daquela receita! Não se sinta limitado quando utilizando ele.</p>
+            <img src="../img/p3.png" alt="Exemplo 1 de Perguntas " class="print-pergunta">
+        </div>
+    </div>
+    </main>
+            <footer>
+            <h1>Equipe da Ajuda Certeira</h1>
+            <p id="subtitulo-membros">Conheça os membros do projeto</p>
+            <br>
+            <div class="membros">
+                <div class="membro">
+                    <img src="../img/membros/gabriel.png" alt="Gabriel Amancio">
+                    <p class="nome-membro">Gabriel Amancio</p>
+                    <p class="rm-membro">RM: 97936</p>
+                </div>
+                <div class="membro">
+                    <img src="../img/membros/henrique.png" alt="Henrique Baptista">
+                    <p class="nome-membro">Henrique Baptista</p>
+                    <p class="rm-membro">RM: 97796</p>
+                </div>
+                <div class="membro">
+                    <img src="../img/membros/pedro.png" alt="Pedro Pacheco">
+                    <p class="nome-membro">Pedro Pacheco</p>
+                    <p class="rm-membro">RM: 98043</p>
+                </div>
+                <div class="membro">
+                    <img src="../img/membros/ricardo.jpg" alt="Ricardo Brito">
+                    <p class="nome-membro">Ricardo Brito</p>
+                    <p class="rm-membro">RM: 98370</p>
+                </div>
+                <div class="membro">
+                    <img src="../img/membros/vitor.jpg" alt="Vitor Jose">
+                    <p class="nome-membro">Vitor Jose</p>
+                    <p class="rm-membro">RM: 55180</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
