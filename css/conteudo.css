@@ -156,9 +156,7 @@ main{
 
 .linha-contato{
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    align-items: end;
+    gap: 25px;
     align-items: center;
     justify-content: center;
 }
@@ -170,4 +168,10 @@ main{
 
 .mensagem{
     width: 50vw;
+}
+
+@media screen and (max-width: 730px){
+    .linha-contato{
+        flex-direction: column;
+    }
 }
