@@ -98,10 +98,11 @@ form{
     font-weight: bold;
     font-size: 1.1rem;
     margin-top: 20px;
-    width: 25vw;
     cursor: pointer;
+    width: 25vw;
     margin-bottom: 5px;
 }
+
 
 .enviar{
     border: 3px solid black;
