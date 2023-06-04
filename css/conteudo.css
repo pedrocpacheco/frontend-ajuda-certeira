@@ -145,3 +145,29 @@ main{
 #titulo-menor{
     font-size: 48px;
 }
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.linha-contato{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: end;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio{
+    display: flex;
+    gap: 5px;
+}
+
+.mensagem{
+    width: 50vw;
+}

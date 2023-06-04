@@ -7,6 +7,8 @@
     <link rel="icon" href="/img/icone.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/conteudo.css">
     <title>Ajuda Certeira | Contato</title>
 </head>
 
@@ -49,7 +51,104 @@
             </div>
         </div>
     </header>
-
+    <main>
+        <br><br>
+        <div class="titulo">
+            <h1 id="titulo-menor">Formulario de Contato</h1>
+            <p class="subtitulo-menor">Entre em contato com a nossa equipe para tirar duvidas.</p>
+        </div>
+        <form class="form-contato">
+            <div class="linha-contato">
+                <div class="informacao">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="informacao">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="informacao">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+                </div>
+            </div>
+            <div class="linha-contato">
+                <div class="informacao">
+                    <label for="titulo">Titulo Contato:</label>
+                    <input type="text" id="titulo" name="titulo">
+                </div>
+                <div class="informacao">
+                    <label for="idade">Idade Usuario:</label>
+                <input type="number" id="idade" name="idade">
+                </div>
+                <div class="informacao">
+                    <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Selecione</option>
+                            <option value="Seção Doadores">Seção Doadores</option>
+                            <option value="Seção ONGs">Seção ONGs</option>
+                            <option value="Seção Eventos">Seção Eventos</option>
+                        </select>
+                </div>
+            </div>
+            <div class="linha-contato">
+                <div class="informacao">
+                    <label for="anexo">Anexo:</label>
+                    <input type="file" id="anexo" name="anexo">
+                </div>
+                <div class="informacao">
+                    <label for="notificacoes">Receber notificações:</label>
+                    <input type="checkbox" id="notificacoes" name="notificacoes"><br><br>            
+                </div>
+                <div class="informacao">
+                    <label for="cidade">Cidade:</label>
+                        <select id="cidade" name="cidade">
+                            <option value="">Selecione</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Guarulhos">Guarulhos</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                        </select>
+                </div>
+            </div>
+            <div class="informacao">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" class="mensagem"></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+    </main>
+    <footer>
+        <h1>Equipe da Ajuda Certeira</h1>
+        <p id="subtitulo-membros">Conheça os membros do projeto</p>
+        <br>
+        <div class="membros">
+            <div class="membro">
+                <img src="../img/membros/gabriel.png" alt="Gabriel Amancio">
+                <p class="nome-membro">Gabriel Amancio</p>
+                <p class="rm-membro">RM: 97936</p>
+            </div>
+            <div class="membro">
+                <img src="../img/membros/henrique.png" alt="Henrique Baptista">
+                <p class="nome-membro">Henrique Baptista</p>
+                <p class="rm-membro">RM: 97796</p>
+            </div>
+            <div class="membro">
+                <img src="../img/membros/pedro.png" alt="Pedro Pacheco">
+                <p class="nome-membro">Pedro Pacheco</p>
+                <p class="rm-membro">RM: 98043</p>
+            </div>
+            <div class="membro">
+                <img src="../img/membros/ricardo.jpg" alt="Ricardo Brito">
+                <p class="nome-membro">Ricardo Brito</p>
+                <p class="rm-membro">RM: 98370</p>
+            </div>
+            <div class="membro">
+                <img src="../img/membros/vitor.jpg" alt="Vitor Jose">
+                <p class="nome-membro">Vitor Jose</p>
+                <p class="rm-membro">RM: 55180</p>
+            </div>
+        </div>
+    </footer>
     <script src="../scripts/menu.js"></script>
 </body>
 </html>
