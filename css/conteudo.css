@@ -27,7 +27,6 @@ main{
     font-size: 20px;
 }
 
-
 .botao-acessar{
     border: 3px solid black;
     padding: 10px 15px;
@@ -54,7 +53,7 @@ main{
 }
 
 #subtitulo-parceiros{
-    max-width: 65vw;
+    max-width: 1000px;
 }
 
 #titulo-inicio{
