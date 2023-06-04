@@ -39,13 +39,17 @@ main{
     cursor: pointer;
 }
 
+.botao-acessar a{
+    color: white;
+}
+
 .info-conteudo p{
     margin-top: 10px;
     margin-bottom: 15px;
     max-width: 850px;
 }
 
-.logo{
+.imagem-conteudo{
     width: 450px;
 }
 
@@ -92,7 +96,6 @@ main{
     flex-wrap: wrap;
     margin-top: 30px;
     justify-content: center;
-    margin-bottom: 30px;
     gap: 15px;
 }
 
