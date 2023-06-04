@@ -46,7 +46,7 @@ main{
 .info-conteudo p{
     margin-top: 10px;
     margin-bottom: 15px;
-    max-width: 850px;
+    max-width: 800px;
 }
 
 .imagem-conteudo{
@@ -91,6 +91,10 @@ main{
     }
 }
 
+.imagem-conteudo{
+    border-radius: 30px;
+}
+
 .parceiros{
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +107,7 @@ main{
     border: #16ADE7 solid 3px;
     border-radius: 25px;
     display: flex;
-    justify-content: top;
+    justify-content: end;
     padding-top: 5px;
     flex-direction: column;
     align-items: center;
@@ -111,6 +115,7 @@ main{
 }
 
 .img-parceiro{
+    border-radius: 20px;
     width: 200px;
 }
 
@@ -131,4 +136,12 @@ main{
     background-color: #C5EBF9;
     padding: 15px;
     border-radius: 25px;
+}
+
+.destaque{
+    font-weight: bold;
+}
+
+#titulo-menor{
+    font-size: 48px;
 }
