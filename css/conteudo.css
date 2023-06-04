@@ -115,6 +115,7 @@ main{
 }
 
 .img-parceiro{
+    margin-top: 1px;
     border-radius: 20px;
     width: 200px;
 }
