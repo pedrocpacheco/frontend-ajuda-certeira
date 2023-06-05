@@ -58,7 +58,7 @@ formEl.addEventListener("submit", e =>{
         body: JSON.stringify(data)
     })
 
-    setTimeout(getEventos(), 3000);
+    setTimeout(getEventos(), 2000);
 })
 
 getEventos()

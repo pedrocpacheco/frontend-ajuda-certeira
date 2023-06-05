@@ -46,7 +46,7 @@ formEl.addEventListener("submit", e =>{
         },
         body: JSON.stringify(data)
         })
-        setTimeout(getDoadores(), 3000)
+        setTimeout(getDoadores(), 2000)
         })
 
 getDoadores()

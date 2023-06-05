@@ -412,5 +412,8 @@ footer h1{
     .exemplo p{
         font-size: 20px; 
     }
-
+}
+main{
+    padding-left: 10px;
+    padding-right: 10px;
 }
