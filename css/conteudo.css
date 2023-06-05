@@ -178,4 +178,10 @@ main{
     .legenda-conteudo{
         width: 80vw;
     }
+
+    .imagem-conteudo{
+        width: 80vw;
+        border-radius: 30px;
+    }
+
 }
