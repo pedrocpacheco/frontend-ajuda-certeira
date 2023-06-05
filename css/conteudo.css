@@ -85,7 +85,6 @@ main{
     }
 
     .logo{
-        margin-top: 30px;
         width: 500px;
     }
 }
@@ -181,7 +180,6 @@ main{
 
     .imagem-conteudo{
         width: 80vw;
-        border-radius: 30px;
     }
 
 }
