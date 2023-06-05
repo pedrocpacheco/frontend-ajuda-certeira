@@ -174,4 +174,8 @@ main{
     .linha-contato{
         flex-direction: column;
     }
+
+    .legenda-conteudo{
+        width: 80vw;
+    }
 }
