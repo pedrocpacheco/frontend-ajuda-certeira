@@ -56,7 +56,7 @@ function enviarFormularioParaAPI(formulario) {
         body: JSON.stringify(data)
       });
   
-      setTimeout(getOngs, 10)
+      setTimeout(getOngs, 100)
     });
 }
 

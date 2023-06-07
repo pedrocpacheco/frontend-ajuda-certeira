@@ -35,7 +35,7 @@ function deleteOng(id) {
     fetch(`https://backend-ajuda-certeria-production.up.railway.app/doadores/${id}`, {
       method: "DELETE"
     })
-    setTimeout(getDoadores, 10)
+    setTimeout(getDoadores, 100)
   }
 
 function enviarFormularioParaAPI(formulario) {
@@ -54,7 +54,7 @@ function enviarFormularioParaAPI(formulario) {
         body: JSON.stringify(data)
       });
   
-      setTimeout(getDoadores, 10)
+      setTimeout(getDoadores, 100)
     });
   }
   
