@@ -635,10 +635,16 @@ footer h1{
         width: 35vw;
     }
 
-
-
     .passo img{
         width: 80vw;
+    }
+
+    .secao-itens{
+        flex-direction: column;
+    }
+
+    .linha-form{
+        flex-direction: column;
     }
 }
 canvas{
