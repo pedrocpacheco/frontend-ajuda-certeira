@@ -6,8 +6,15 @@
     text-decoration: none;
 }
 
+
+
+main{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .formulario{
-    margin-top: 26px;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,12 +32,13 @@
 }
 
 .titulo-ias{
-    margin-top: 26px;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .subtitulo{
@@ -42,12 +50,24 @@
     font-size: 60px;
     margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.linha-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #titulo-menor{
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 10px;
 }
 
@@ -72,7 +92,7 @@ form{
 }
 
 #form-api{
-    margin-top: 38px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,15 +112,19 @@ form{
     border: 3px solid black;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #dca903;
+    background-color: #f3bb02;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 1.1rem;
     margin-top: 20px;
     cursor: pointer;
-    width: 25vw;
+    width: 400px;
     margin-bottom: 5px;
+}
+
+#atualizar:hover{
+    background-color: #b78d03;
 }
 
 
@@ -108,12 +132,34 @@ form{
     border: 3px solid black;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #6ECDF0;
-    color: black;
+    background-color: #16ADE7;
+    color: white;
     font-weight: bold;
     font-size: 1.1rem;
+    width: 400px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.enviar:hover{
+    background-color: #165f7c;
+}
+
+.deletar{
+    border: 3px solid black;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #e71616;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
     width: fit-content;
     cursor: pointer;
+    margin-top: 5px;
+}
+
+.deletar:hover{
+    background-color: #862525;
 }
 
 .informacao{
@@ -149,12 +195,18 @@ form{
 }
 
 .campos{
+    margin-top: 15px;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.linha-form{
+    display: flex;
+    gap: 20px;
 }
 
 .campos-linha{
@@ -247,7 +299,8 @@ form{
 }
 
 .descricao-evento{
-    max-width: 450px;
+    margin-top: 5px;
+    max-width: 380px;
 }
 
 .email{
@@ -290,7 +343,8 @@ form{
 
 .linha-titulo{
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -354,6 +408,83 @@ footer h1{
     font-weight: bold;
 }
 
+.acessar-guia{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.acessar-guia button{
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 450px;
+    font-size: 20px;
+    height: 40px;
+    color: white; 
+    font-weight: bold;
+    background-color: #16ADE7;
+    cursor: pointer;
+}
+
+.acessar-guia button:hover{
+    cursor: pointer;
+    background-color: #165f7c;
+}
+
+.guia-passos{
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.linha-passo{
+    display: flex;
+    gap: 60px;
+    align-items: start;
+}
+
+.subtitulo-exemplo{
+    font-size: 24px;
+    width: 50vw;
+    margin-top: 20px;
+}
+
+.passo{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.passo h2{
+    font-size: 30px;
+}
+
+.passo p{  
+    font-size: 24px;
+    max-width: 35vw;
+}
+
+.passo img{
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 35vw;
+}
+
+.inicio-secao{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
 @media screen and (max-width: 1132px){
 
     .campos-linha{
@@ -362,6 +493,7 @@ footer h1{
 
     .linha-titulo{
         flex-direction: column;
+        align-items: center;
     }
 
     .imgs-titulo{
@@ -413,20 +545,51 @@ footer h1{
         font-size: 20px; 
     }
 }
-main{
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 @media screen and (max-width: 730px){
+    .acessar-guia{
+        width: 80vw;
+    }
+
+    .acessar-guia button{
+        width: 90vw;
+    }
+
     .campos{
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
+    
     #atualizar{
-        width: fit-content;
+        width: 330px;
     }
 
+    .enviar{
+        width: 330px;
+    }
+
+    .guia-passos{
+        flex-direction: column;
+    }
+
+    .linha-passo{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .passo p{  
+        font-size: 24px;
+        max-width: 80vw;
+    }
+    
+    .passo img{
+        border-radius: 10px;
+        margin-top: 3px;
+        width: 35vw;
+    }
+
+    .passo img{
+        width: 80vw;
+    }
 }

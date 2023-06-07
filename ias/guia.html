@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icone.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/conteudo.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Guias | Ajuda Certeira</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./guia.html"><img class="img-logo" src="../img/ias-section.png" alt="Logo Ajuda Certeira | Usuário"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../plataforma/doadores.html" class="nav-link">Doadores</a></li>
+                    <li class="nav-item"><a href="../plataforma/ongs.html" class="nav-link">Ongs</a></li>
+                    <li class="nav-item"><a href="../plataforma/eventos.html" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="./mapas.html" class="nav-link">Mapa Inteligente</a></li>
+                    <li class="nav-item"><a href="./ajudante.html" class="nav-link">Ajudante Pessoal</a></li>
+                    <li class="nav-item"><a href="./guia.html" class="nav-link" id="atual">Guia</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button class="white-btn"><a href="../index.html">Sair</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../plataforma/doadores.html" class="nav-link">Doadores</a></li>
+                    <li class="nav-item"><a href="../plataforma/ongs.html" class="nav-link">Ongs</a></li>
+                    <li class="nav-item"><a href="../plataforma/eventos.html" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="./mapas.html" class="nav-link">Mapa Inteligente</a></li>
+                    <li class="nav-item"><a href="./ajudante.html" class="nav-link" id="atual-mobile-menu   ">Ajudante Pessoal</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="../index.html">Sair</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="titulo-ias">
+        <div class="titulo">
+            <div class="linha-titulo">
+                <h1>Guia IAs Generativas</h1>
+                <div class="imgs-titulo">
+                </div>
+            </div>
+            <p class="subtitulo">Caso você não saiba como usar uma IA Generativa, leia este guia!</p>
+        </div>
+        <br>
+        <div class="acessar-guia">
+            <h2>Já sabe como utilizar IAs Generativas? Então veja exemplos:</h2>
+            <a href="./ajudante.html"><button>Exemplos de IAs Generativas em nosso Contexto</button></a>
+        </div>
+        <div class="inicio-secao">
+            <div class="linha-titulo">
+                <h1 id="titulo-menor">Chat GPT</h1>
+                <a href="https://openai.com/blog/chatgpt"><img src="../img/openai.png" alt="Logo OpenAI"></a>
+            </div>
+            <p class="subtitulo-exemplo">O Chat GPT é o modelo de Inteligência Artificial mais utilizado no planeta. Ele foi criado pela Open AI, e pode te responder sobre qualquer coisa!</p>
+        </div>
+        <div class="guia-passos">
+            <div class="linha-passo">
+                <div class="passo">
+                    <h2>1- Pesquisando no Google</h2>
+                    <p>Para iniciar, entre no seu navegador (Google, Firefox, Safari, Edge) e pesquise por <a href="https://www.google.com/search?q=chatgpt&oq=chatgpt+&aqs=chrome.0.69i59l2j69i60j69i61l2.1371j0j1&sourceid=chrome&ie=UTF-8">chatgpt</a></p>
+                    <img src="../img/guia/1.PNG" alt="Passo 1">
+                </div>
+                <div class="passo">
+                    <h2>2- Acessando o Site da OpenAI</h2>
+                    <p>No site da OpenAI Clique em "Tente ChatGPT" e aguarde ser redirecionado</p>
+                    <img src="../img/guia/2.PNG" alt="Passo 2">
+                </div>
+            </div>
+            <div class="linha-passo">
+                <div class="passo">
+                    <h2>3- Iniciando o Cadastro</h2>
+                    <p>Você acesso a seção de pré cadastro. Já que você não tem uma conta, clique no "Cadastrar"<p>
+                    <img src="../img/guia/3.PNG" alt="Passo 3">
+                </div>
+                <div class="passo">
+                    <h2>4- Escolha sua opção de Email</h2>
+                    <p>A seguir, escolha a maneira que você deseja cadastrar o seu email. Escolha a que achar mais facil<p>
+                    <img src="../img/guia/4.PNG" alt="Passo 4">
+                </div>
+            </div>
+            <div class="linha-passo">
+                <div class="passo">
+                    <h2>5- Informações Pessoais</h2>
+                    <p>Com o seu email cadastrado, adicione as suas informações pessoais nos campos pedidos no site<p>
+                    <img src="../img/guia/5.PNG" alt="Passo 5">
+                </div>
+                <div class="passo">
+                    <h2>6- Iniciando a sua Conversa</h2>
+                    <p>Com isso, você concluiu seu cadastro. Agora, crie novas conversas, clicando onde esta indicado!<p>
+                    <img src="../img/guia/6.PNG" alt="Passo 6">
+                </div>
+            </div>
+            <div class="passo">
+                <h2>7- Navegando pelas Conversas</h2>
+                <p>Você pode criar quantas conversas desejar. Para acessa-las, clique no simbolo de menu e escolha.<p>
+                <img src="../img/guia/7.PNG" alt="Passo 7">
+            </div>
+        </div>
+        <div class="inicio-secao">
+            <div class="linha-titulo">
+                <h1 id="titulo-menor">Ajudante Pessoal</h1>
+                <a href="http://t.me/ac_ajudante_bot"><img src="../img/telegram.png" alt="Logo Telegram"></a>
+            </div>
+            <p class="subtitulo-exemplo">Se preferir, você pode acessar o nosso Ajudante Pessoa, que utiliza das tecnologias do chatgpt, mas tem uma maneira de ser utilizado mais fácil!</p>
+        </div>
+        <div class="guia-passos">
+            <div class="linha-passo">
+                <div class="passo">
+                    <h2>1- Acesse o QR Code</h2>
+                    <p>Escaneie o QR code, ou click neste link para acessar a conversa no Telegram com o nosso Ajudante Pessoal</p>
+                    <img src="../img/guia/qrcode.png" alt="Qr Code">
+                </div>
+                <div class="passo">
+                    <h2>2- Conversando no Telegram</h2>
+                    <p>Após acessar o link, você será redirecionado à uma conversa no Telegram com o Ajudante. Aproveite!</p>
+                    <img src="../img/guia/qr-pos.PNG" alt="Telegram">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

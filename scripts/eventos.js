@@ -32,6 +32,7 @@ function getEventos(){
                     <p class="dia">${dia}</p>
                 </div>
                 <span class="adress">${adress}</span>
+                <button class="deletar" onclick="deleteOng(${id})">Deletar</button>
                 <p class="descricao-evento">${descricao}</p>
                 </div>
                 `
@@ -42,23 +43,34 @@ function getEventos(){
     })
 }
 
-const formEl = document.getElementById("form-api")
+function deleteOng(id) {
+    fetch(`https://backend-ajuda-certeria-production.up.railway.app/eventos/${id}`, {
+      method: "DELETE"
+    })
+    setTimeout(getEventos, 10)
+  }
 
-formEl.addEventListener("submit", e =>{
-    e.preventDefault();
-
-    const formData = new FormData(formEl)
-    const data = Object.fromEntries(formData)
-
-    fetch("https://backend-ajuda-certeria-production.up.railway.app/eventos", {
+function enviarFormularioParaAPI(formulario) {
+    formulario.addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      const formData = new FormData(formulario);
+      const data = Object.fromEntries(formData);
+      console.log(JSON.stringify(data));
+  
+      fetch("https://backend-ajuda-certeria-production.up.railway.app/eventos", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(data)
-    })
+      });
+  
+      setTimeout(getEventos, 10)
+    });
+}
 
-    setTimeout(getEventos(), 2000);
-})
+const formEl = document.getElementById("form-api")
+enviarFormularioParaAPI(formEl)
 
 getEventos()

@@ -20,7 +20,9 @@ main{
 }
 
 .titulo-conteudo{
+    margin-top: 10px;
     font-size: 50px;
+    margin-bottom: 25px;
 }
 
 .legenda-conteudo{
@@ -31,11 +33,15 @@ main{
     border: 3px solid black;
     padding: 10px 15px;
     border-radius: 10px;
-    background-color: #064860;
+    background-color: #16ADE7;
     color: white;
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
+}
+
+.botao-acessar:hover{
+    background-color: #165f7c;
 }
 
 .botao-acessar a{
@@ -166,7 +172,7 @@ main{
 }
 
 .mensagem{
-    width: 50vw;
+    width: 500px;
 }
 
 @media screen and (max-width: 730px){

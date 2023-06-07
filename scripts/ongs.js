@@ -12,7 +12,7 @@ function getOngs(){
                 const email = u.email
                 const imageUrl = u.imageUrl
                 const descricao = u.description
-                const address = u.adress
+                const address = u.address
                 
                 const userInnerHTML = `
                 <div class="image-container">
@@ -21,6 +21,7 @@ function getOngs(){
                 <div class="info">
                     <h3 class="nome">${name}</h2>
                     <span class="email">${email}</span>
+                    <button class="deletar" onclick="deleteOng(${id})">Deletar</button>
                     <span class="adress">${address}</span>
                     <p class="descricao">${descricao}</p>
                 </div>
@@ -32,23 +33,34 @@ function getOngs(){
     })
 }
 
-const formEl = document.getElementById("form-api")
+function deleteOng(id) {
+    fetch(`https://backend-ajuda-certeria-production.up.railway.app/ongs/${id}`, {
+      method: "DELETE"
+    })
+    setTimeout(getOngs, 100)
+  }
 
-formEl.addEventListener("submit", e =>{
-    e.preventDefault();
-
-    const formData = new FormData(formEl)
-    const data = Object.fromEntries(formData)
-
-    fetch("https://backend-ajuda-certeria-production.up.railway.app/ongs", {
+function enviarFormularioParaAPI(formulario) {
+    formulario.addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      const formData = new FormData(formulario);
+      const data = Object.fromEntries(formData);
+      console.log(JSON.stringify(data));
+  
+      fetch("https://backend-ajuda-certeria-production.up.railway.app/ongs", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(data)
-    })
+      });
+  
+      setTimeout(getOngs, 10)
+    });
+}
 
-    setTimeout(getOngs(), 2000);
-})
+const formEl = document.getElementById("form-api")
+enviarFormularioParaAPI(formEl)
 
 getOngs()

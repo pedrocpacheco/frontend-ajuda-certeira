@@ -20,6 +20,7 @@ function getDoadores(){
                 <div class="info">
                     <h3 class="nome">${name}</h2>
                     <span class="email">${email}</span>
+                    <button class="deletar" onclick="deleteOng(${id})">Deletar</button>
                     <p class="descricao">${descricao}</p>
                 </div>
                 `
@@ -30,23 +31,35 @@ function getDoadores(){
     })
 }
 
-const formEl = document.getElementById("form-api")
+function deleteOng(id) {
+    fetch(`https://backend-ajuda-certeria-production.up.railway.app/doadores/${id}`, {
+      method: "DELETE"
+    })
+    setTimeout(getDoadores, 10)
+  }
 
-formEl.addEventListener("submit", e =>{
-     e.preventDefault();
-
-    const formData = new FormData(formEl)
-    const data = Object.fromEntries(formData)
-    console.log(JSON.stringify(data))
-
-    fetch("https://backend-ajuda-certeria-production.up.railway.app/doadores", {
+function enviarFormularioParaAPI(formulario) {
+    formulario.addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      const formData = new FormData(formulario);
+      const data = Object.fromEntries(formData);
+      console.log(JSON.stringify(data));
+  
+      fetch("https://backend-ajuda-certeria-production.up.railway.app/doadores", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(data)
-        })
-        setTimeout(getDoadores(), 2000)
-        })
+      });
+  
+      setTimeout(getDoadores, 10)
+    });
+  }
+  
+const formEl = document.getElementById("form-api");
+enviarFormularioParaAPI(formEl);
+
 
 getDoadores()
